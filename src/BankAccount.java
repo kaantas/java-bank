@@ -54,6 +54,10 @@ public class BankAccount implements Subject{
             this.event = "Withdraw";
             statusChanged();
         }
+        else{
+            System.out.println("You cannot withdraw!");
+            System.out.println("");
+        }
     }
 
     public void credit(double amount){
